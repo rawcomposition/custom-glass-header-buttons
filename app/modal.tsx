@@ -1,13 +1,10 @@
-import { StyleSheet } from "react-native";
-
-import { ThemedText } from "@/components/themed-text";
-import { ThemedView } from "@/components/themed-view";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function ModalScreen() {
   return (
-    <ThemedView style={styles.container}>
-      <ThemedText type="title">Modal</ThemedText>
-    </ThemedView>
+    <View style={styles.container}>
+      <Text style={styles.title}>Modal</Text>
+    </View>
   );
 }
 
@@ -17,5 +14,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     padding: 20,
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: "bold",
   },
 });

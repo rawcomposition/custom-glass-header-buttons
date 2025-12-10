@@ -1,16 +1,13 @@
 import { router } from "expo-router";
-import { StyleSheet, TouchableOpacity } from "react-native";
-
-import { ThemedText } from "@/components/themed-text";
-import { ThemedView } from "@/components/themed-view";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <ThemedView style={styles.container}>
+    <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={() => router.push("/modal")}>
-        <ThemedText style={styles.buttonText}>open modal</ThemedText>
+        <Text style={styles.buttonText}>open modal</Text>
       </TouchableOpacity>
-    </ThemedView>
+    </View>
   );
 }
 
